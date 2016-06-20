@@ -7,3 +7,6 @@ D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Release\CalkulatorApp.Propertie
 D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Release\CalkulatorApp.csproj.GenerateResource.Cache
 D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Release\CalkulatorApp.exe
 D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Release\CalkulatorApp.pdb
+C:\Users\Dmytro\Desktop\Abc\CalkulatorApp\bin\Release\CalkulatorApp.exe.config
+C:\Users\Dmytro\Desktop\Abc\CalkulatorApp\obj\Release\CalkulatorApp.exe
+C:\Users\Dmytro\Desktop\Abc\CalkulatorApp\obj\Release\CalkulatorApp.pdb
