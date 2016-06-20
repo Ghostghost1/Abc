@@ -1,0 +1,9 @@
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\bin\Debug\CalkulatorApp.exe.config
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\bin\Debug\CalkulatorApp.exe
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\bin\Debug\CalkulatorApp.pdb
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.Properties.Resources.resources
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.csproj.GenerateResource.Cache
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.exe
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.pdb
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.Calculator.resources
+D:\Projects\Calk\CalkulatorApp\CalkulatorApp\obj\Debug\CalkulatorApp.csprojResolveAssemblyReference.cache
