@@ -55,4 +55,62 @@ namespace CalkulatorApp
                             PopFunction(Operands, Functions);
                     }
                     else
-                   
+                    {
+                        // Pętla która oblicz jeżeli stek nie jest pusty
+                        while (CanPop((char)token, Functions))
+                            if (Operands.Count() == 1 && Functions.Count() >= 2)// bez tego if'a nie działa 4√(9)
+                                break;
+                            else
+                                PopFunction(Operands, Functions);
+
+                        Functions.Push((char)token);//podaje operacje w stek
+                    }
+                }
+                prevToken = token;// nadaje dla wczeszniejszego if'a
+            }
+            while (token != null);// działa do tej pory, dopoky podany symbol nie jest null
+
+            if (Operands.Count > 1 || Functions.Count > 0)//Błąd kiedy stek operacji jest pust a w steku są 2 lub więcej liczb
+                throw new Exception("Błąd");
+
+            return Operands.Pop();
+        }
+
+        //metoda wyszukuje operacje
+        private static void PopFunction(Stack<double> Operands, Stack<char> Functions)
+        {
+            // ten if jest potrzebny, ponieważ operzcja √ nie potrzebuje 2 operandów
+            if (Functions.Peek() == '√')
+            {
+                Operands.Push(Math.Sqrt(Operands.Pop()));
+                Functions.Pop();
+            }
+            else
+            {
+                double B = Operands.Pop();
+                double A = Operands.Pop();
+                switch (Functions.Pop())
+                {
+                    case '+':
+                        Operands.Push(A + B);
+                        break;
+                    case '-':
+                        Operands.Push(A - B);
+                        break;
+                    case '*':
+                        Operands.Push(A * B);
+                        break;
+                    case '/':
+                        Operands.Push(A / B);
+                        break;
+                    case '^':
+                        Operands.Push(Math.Pow(A, B));
+                        break;
+                    case '%':
+                        Operands.Push(A % B);
+                        break;
+                }
+            }
+        }
+
+       
