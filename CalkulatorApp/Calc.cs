@@ -113,4 +113,13 @@ namespace CalkulatorApp
             }
         }
 
-       
+        //zwraca true kiedy jest możliwe obliczenie
+        private static bool CanPop(char Znak, Stack<char> Functions)
+        {
+            if (Functions.Count == 0)
+                return false;
+            int priority1 = GetPriority(Znak);
+            int priority2 = GetPriority(Functions.Peek());
+
+            return priority1 >= 0 && priority2 >= 0 && priority1 >= priority2;
+        }
