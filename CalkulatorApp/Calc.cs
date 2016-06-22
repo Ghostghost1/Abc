@@ -10,7 +10,7 @@ namespace CalkulatorApp
     class Calc
     {
         /// <summary>
-        /// 
+        /// hgf
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
